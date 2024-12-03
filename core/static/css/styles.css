@@ -18,7 +18,7 @@ nav {
 
 header {
     /* Stylos for background*/
-    background-image: url("../img/fitness-outline.svg"), linear-gradient(var(--color-principal), var(--color-secundario));
+    background-image: url("../img/logo.webp"), linear-gradient(var(--color-principal), var(--color-secundario));
     background-position: 10% center , center;
     background-size: contain, cover;
     background-repeat: no-repeat;
