@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="favicon" content="{% static 'img/fitness-outline' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Farmapp</title>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="#que-es">¿Que hacemos?</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#descarga">Descarga</a></li>
+            </ul>
+        </nav>
+
+        <h1>FarmApp</h1>
+        <p>Gestiona tus medicamentos de forma sencilla y segura con nuestra app confiable y fácil de usar.</p>
+        <a href="#" class="btn-download">Descargar Ahora</a>
+    </header>
+
+    <section id="que-es">
+        <h2>¿Qué es FarmApp?</h2>
+        <p>FarmApp es una aplicación diseñada para ayudar a las personas a gestionar sus medicamentos de manera eficiente. Con ella, puedes programar alarmas, llevar un registro de consumo y consultar información sobre medicamentos de forma rápida y confiable.</p>
+    </section>
+
+    <section id="caracteristicas" class="features">
+        <h2>Características Principales</h2>
+        <div class="feature-container">
+            <img src="{% static 'img/newAlarm.jpg' %}" alt="Programación de alarmas" class="screenshot">
+            <div>
+                <h3>Programación de Alarmas</h3>
+                <p>Nunca olvides tomar tus medicamentos gracias a la funcionalidad de alarmas personalizables. Con esta herramienta, puedes programar recordatorios para cada dosis, ajustando horarios y frecuencia según las indicaciones de tu tratamiento. Recibirás notificaciones en el momento adecuado, asegurando que sigas tu régimen médico de manera precisa.</p>
+            </div>
+        </div>
+    
+        <div class="feature-container">
+            <div>
+                <h3>Registro de Consumo</h3>
+                <p>Lleva un control detallado de tu historial de medicamentos con el registro de consumo. Esta función te permite marcar cada dosis tomada, revisar un historial completo de tratamientos pasados y monitorear tu adherencia al plan médico. Es ideal para aquellos que necesitan supervisar su progreso o compartir información con sus médicos.</p>
+            </div>
+            <img src="{% static 'img/main_user.jpg' %}" alt="Registro de consumo" class="screenshot">
+        </div>
+    
+        <div class="feature-container">
+            <img src="{% static 'img/emergency_contact.jpg' %}" alt="Contacto de Emergencia" class="screenshot">
+            <div>
+                <h3>Añadir un Contacto de Emergencia</h3>
+                <p>Mantén tu salud respaldada en todo momento al asignar un contacto de emergencia dentro de la aplicación. Esta funcionalidad te permite registrar información importante de una persona de confianza, esto ayudara a garantizar que siempre cuentes con apoyo para cuando lo necesites.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="descarga">
+        <h2>¡Descarga FarmApp Hoy!</h2>
+
+        {% if request.user_agent.is_mobile %}
+            <p>Your device is Mobile</p>
+        {% endif %}
+
+        {% if request.user_agent.is_pc %}
+            <p>Your device is Desktop</p>
+        {% endif %}
+
+        <p>Disponible en Google Play y App Store. Tu salud al alcance de tu mano.</p>
+        <a href="#" class="btn-download">Google Play</a>
+        <a href="#" class="btn-download">App Store</a>
+    </section>
+</body>
+</html>

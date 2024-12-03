@@ -1,0 +1,171 @@
+:root {
+    --color-principal: #4C9BA2;
+    --color-fondo: #1E1E1E;
+    --color-fondo-enfasis: #373739;
+    --color-secundario: #387185;
+    --color-logo: #E8394F;
+    --color-success: #34AD20;
+    --color-danger: #CA1212;
+    --color-letras: #DCEBEC;
+}
+
+nav {
+    background-color: transparent;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-color: #252525cc;
+        border-radius: 15px;
+        max-width: 60%;
+    }
+
+    nav a {
+        color: var(--color-letras);
+        text-decoration: none;
+        margin: 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        max-width: 50%;
+        background-color: #252525cc;
+        border-radius: 15px;
+    }
+    
+    nav a {
+        color: var(--color-letras);
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Fira Code;
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    line-height: 1.6;
+}
+
+header {
+    /* Stylos for background*/
+    background-image: url("../img/fitness-outline.svg"), linear-gradient(var(--color-principal), var(--color-secundario));
+    background-position: 10% center , center;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+
+    padding: 0rem 1rem 6rem 1rem;
+    text-align: center;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4); 
+}
+
+header h1 {
+    color: var(--color-letras);
+    margin: 0.5rem 0.5rem 0.5rem 50%;
+}
+
+header p {
+    margin: 0.5rem 0.5rem 0.5rem 50%;
+}
+
+header .btn-download {
+    background-color: var(--color-logo);
+    color: var(--color-letras);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 50%;
+}
+
+section {
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--color-principal);
+}
+
+section p {
+    text-align: justify;
+    margin: 1rem 0;
+    max-width: 60%;
+}
+
+.features {
+    background-color: var(--color-fondo-enfasis);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.cta {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--color-fondo-enfasis);
+}
+
+.cta .btn-download {
+    background-color: var(--color-success);
+    color: var(--color-letras);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+img.screenshot {
+    border: 2px solid #4C9BA2;
+    transition: transform 0.3s ease;
+}
+
+img.screenshot:hover {
+    transform: scale(1.05);
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.feature-container img {
+    max-width: 50%;
+    max-height: 35rem;
+}
+
+.feature-container div {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
