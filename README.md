@@ -27,7 +27,7 @@ pip install virtualenv
 * clona el repositorio del proyecto desde GitHub.
 
 ```bash
-git clone https://github.com/HaleymHidalgo/Farmapp_website.git
+git clone https://github.com/Volkergz/Farmapp_website.git
 ```
 
 *  Accede al directorio del proyecto clonado
