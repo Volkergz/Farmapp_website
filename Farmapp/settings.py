@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u#ri5patddy7=gs&o*w5_$gezfr-*)ke6@y*p=nv@_)e&0ue!u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['farmapp.zeabur.app']
 
 
 # Application definition
